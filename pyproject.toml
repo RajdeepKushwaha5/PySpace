@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyspace"
+version = "0.1.0"
+description = "Cross-platform Python environment manager with daemon and caching"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+dependencies = [
+    "typer",
+    "rich",
+    "loguru",
+    "pathlib2; python_version < '3.4'",
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+pyspace = "cli.main:app"
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8"]
+
+[tool.setuptools.packages.find]
+include = ["env_manager", "daemon", "cli", "pyspace_daemon"]
+exclude = ["web_ui", "scripts", "tests", "docs"]

@@ -1,0 +1,11 @@
+typer
+rich
+loguru
+
+[:python_version < "3.4"]
+pathlib2
+
+[dev]
+pytest
+black
+flake8
