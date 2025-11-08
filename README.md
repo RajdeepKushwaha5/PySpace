@@ -114,5 +114,3 @@ To contribute:
 ## License
 
 MIT License
-
-✨ **Tagline**: "PySpace — Cross-platform Python environment management made simple."
