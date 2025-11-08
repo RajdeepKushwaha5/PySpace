@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PySpace – Cross-platform Python Environment Manager
 
 🔍 **Project Summary**
